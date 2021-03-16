@@ -6,5 +6,5 @@ String say(String from, String massage, {String to, String appName}) {
 
 main(List<String> arguments) {
 
-  print(say("Johny", "Hello", to: "Doloris"));
+  print(say("Johny", "Hello", to: "Doloris", appName: "Whatsapp"));
 }
