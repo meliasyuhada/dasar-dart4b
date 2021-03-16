@@ -1,5 +1,18 @@
-import 'package:dart_application/dart_application.dart' as dart_application;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${dart_application.calculate()}!');
+double luas_segiempat(double panjang, double lebar){
+  double hasil;
+  hasil = panjang * lebar;
+  return hasil;
+}
+
+main(List<String> arguments) {
+  double p, l, luas;
+
+  p = double.tryParse(stdin.readLineSync());
+  l = double.tryParse(stdin.readLineSync());
+
+  luas = luas_segiempat(p, l);
+
+  print(luas);
 }
