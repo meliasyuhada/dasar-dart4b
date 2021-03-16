@@ -2,7 +2,7 @@ import 'dart:io';
 
 
 main(List<String> arguments) {
-  for (int counter =1; counter <5; counter = counter + 1){
+  for (int counter =9; counter < 1; counter == 2){
     print("hello");
   }
 }
