@@ -1,8 +1,13 @@
-import 'package:dart_application/dart_application.dart';
-import 'package:test/test.dart';
+import 'dart:io';
+main(List<String> arguments) {
+  int number = int.tryParse(stdin.readLineSync());
 
-void main() {
-  test('calculate', () {
-    expect(calculate(), 42);
-  });
+  if (number > 0) {
+    print("Positif");
+  } else if (number < 0) {
+    print("negatif");
+  }else {
+    print("nol");
+  }
+
 }
