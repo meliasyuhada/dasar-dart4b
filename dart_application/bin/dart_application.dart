@@ -6,13 +6,19 @@ double luas_segiempat(double panjang, double lebar){
   return hasil;
 }
 
+void sapa_penonton(){
+  print("Hello Penonton!!");
+}
+
 main(List<String> arguments) {
-  double p, l, luas;
 
-  p = double.tryParse(stdin.readLineSync());
-  l = double.tryParse(stdin.readLineSync());
+  sapa_penonton();
+  // double p, l, luas;
 
-  luas = luas_segiempat(p, l);
+  // p = double.tryParse(stdin.readLineSync());
+  // l = double.tryParse(stdin.readLineSync());
 
-  print(luas);
+  // luas = luas_segiempat(p, l);
+
+  // print(luas);
 }
