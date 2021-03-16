@@ -12,13 +12,31 @@ void main(List<String> arguments) {
   //   print("nol");
   // }
 
-  if (number == 0) {
+  // if (number == 0) {
+  //   print("nol");
+  // } else if (number == 1) {
+  //   print("satu");
+  // } else if (number == 2) {
+  //   print("dua");
+  // } else {
+  //   print("bilangan lain");
+  // }
+
+  switch(number) {
+    case 0:
     print("nol");
-  } else if (number == 1) {
+    break;
+    case 1:
+    print(number);
     print("satu");
-  } else if (number == 2) {
+    break;
+    case 2:
     print("dua");
-  } else {
+    break;
+    defaulut:
     print("bilangan lain");
   }
+
+
+
 }
