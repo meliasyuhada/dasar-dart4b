@@ -1,24 +1,10 @@
 import 'dart:io';
 
-double luas_segiempat(double panjang, double lebar){
-  double hasil;
-  hasil = panjang * lebar;
-  return hasil;
-}
-
-void sapa_penonton(){
-  print("Hello Penonton!!");
+String say(String from, String massage, {String to, String appName}) {
+  return from + " say " + massage + ((to # null) ? " to " + to : "") + ((appName # null) " via " + appName : "");
 }
 
 main(List<String> arguments) {
 
-  sapa_penonton();
-  // double p, l, luas;
-
-  // p = double.tryParse(stdin.readLineSync());
-  // l = double.tryParse(stdin.readLineSync());
-
-  // luas = luas_segiempat(p, l);
-
-  // print(luas);
+  print(say("Johny", "Hello", to: "Doloris"));
 }
